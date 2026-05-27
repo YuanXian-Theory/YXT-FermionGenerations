@@ -22,3 +22,8 @@ Formalization of the topological origin of **three generations of fermions** fro
 ```bash
 lake exe cache get
 lake build
+
+## All theorems compile successfully in Lean 4.
+Related Repositories
+•  YXTT 2.0
+•  YXT-Formalization
