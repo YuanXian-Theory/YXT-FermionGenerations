@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this repository in your research, please cite it as below."
+title: "YXT-FermionGenerations: Formalization of the Topological Origin of Three Fermion Generations from T⁶⁴"
+authors:
+  - family-names: "Acharya"
+    given-names: "Zhenyuan"
+    alias: "真圆阿奢黎"
+    affiliation: "YuanXian Cosmology Institute, Shanghai, China"
+    email: "shelizi2284@qq.com"
+    orcid: ""  # Add your ORCID if available
+date-released: "2026-05-26"
+version: "1.0.0"
+doi: ""  # Will be filled after Zenodo archiving
+repository-code: "https://github.com/YuanXian-Theory/YXT-FermionGenerations"
+license: "MIT"
+keywords:
+  - "YuanXian Theory"
+  - "T^64 topology"
+  - "fermion generations"
+  - "three generations"
+  - "formal verification"
+  - "Lean 4"
+  - "Coq"
+  - "topological physics"
+  - "standard model"
+abstract: |
+  Formal proof repository for the paper "从T^64拓扑到三代费米子：代际数字'3'的本体论必然性证明".
+  Contains Lean 4 and Coq formalizations proving that the three generations of fermions
+  are a topological necessity derived from the T^64 torus under TCSC constraints.
+  
+  Core theorem: 3 = (64 - 1)/21
+references:
+  - type: article
+    title: "从T^64拓扑到三代费米子：代际数字'3'的本体论必然性证明"
+    authors:
+      - family-names: "Acharya"
+        given-names: "Zhenyuan"
+    year: 2026
+    doi: ""  # Paper DOI when published
+    url: ""  # arXiv or journal link
+  - type: software
+    title: "YXT-Formalization"
+    authors:
+      - family-names: "Acharya"
+        given-names: "Zhenyuan"
+    year: 2026
+    url: "https://github.com/YuanXian-Theory/YXT-Formalization"
+  - type: software
+    title: "YXTT 2.0"
+    authors:
+      - family-names: "Acharya"
+        given-names: "Zhenyuan"
+    year: 2026
+    url: "https://github.com/YuanXian-Theory/YXTT2.0"
