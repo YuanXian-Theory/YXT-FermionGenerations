@@ -1,0 +1,41 @@
+name: Formal Verification
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/setup-lean@v2
+      - name: Build Lean
+        run: |
+          cd lean
+          lake exe cache get
+          lake build
+
+  coq:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Coq
+        uses: coq-community/setup-coq@v1
+        with:
+          coq-version: '8.19'
+      - name: Build Coq
+        run: |
+          cd coq
+          make
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Python Verification
+        run: |
+          cd python
+          pip install -r requirements.txt
+          python verify_generations.py
